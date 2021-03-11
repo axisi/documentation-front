@@ -5,16 +5,23 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContextComponent } from './context/context.component';
+import {RouterModule} from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
+import { ErrorComponent } from './error/error.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     FooterComponent,
-    ContextComponent
+    ContextComponent,
+    ErrorComponent,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
